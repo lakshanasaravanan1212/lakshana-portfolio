@@ -310,7 +310,7 @@ html.theme-transition-ready .skills-category-title,
 html.theme-transition-ready .contact-link-card,
 html.theme-transition-ready .contact-email,
 html.theme-transition-ready .footer-note {
-  transition: background-color 320ms ease, color 320ms ease, border-color 320ms ease, box-shadow 320ms ease, fill 320ms ease, stroke 320ms ease, transform 320ms ease, opacity 320ms ease, height 320ms ease;
+  transition: background-color 320ms ease, color 320ms ease, border-color 320ms ease, box-shadow 320ms ease, fill 320ms ease, stroke 320ms ease, opacity 320ms ease, height 320ms ease;
 }
 
 /* Scroll progress bar */

@@ -39,12 +39,6 @@
     grid-column: 1 / -1;
     min-height: 480px;
   }
-  .ncc-photo-frame {
-    width: min(270px, 72vw);
-  }
-  .ncc-photo-box {
-    height: 390px;
-  }
   .resume-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -143,17 +137,6 @@
   .ncc-collage {
     grid-column: 1;
     min-height: 450px;
-  }
-  .ncc-photo-frame {
-    width: min(270px, 82vw);
-  }
-  .ncc-photo-box {
-    height: 370px;
-  }
-  .ncc-hand-note {
-    top: 1%;
-    right: 0;
-    font-size: 17px;
   }
   .portrait-frame {
     width: min(320px, 88vw);

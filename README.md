@@ -12,7 +12,7 @@ The portfolio reflects Lakshana's resume and the Talview UI/UX Intern role: Figm
 
 Design tools listed are those present in the resume: Figma, Adobe Photoshop, Adobe Illustrator, and Canva. Sketch, Balsamiq, and InVision are not listed as skills because the resume does not confirm experience with them.
 
-The About section features Lakshana's beach portrait and an NCC cadet photo with a short personal caption.
+The About section features Lakshana's beach portrait and an interactive two-photo memory deck with her NCC and podcast photos. Selecting the podcast photo reveals the official Spotify show player for Crash Course on Seruppadii.
 
 Subtle floating scrapbook doodles decorate the main sections. On fine-pointer devices, a few respond gently to mouse movement; animations respect reduced-motion preferences and are minimized on small screens.
 

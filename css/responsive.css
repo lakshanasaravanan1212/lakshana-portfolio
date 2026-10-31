@@ -58,10 +58,39 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 860px) {
+  .brand-logo {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    gap: clamp(12px, 2vw, 16px);
+  }
+}
+
 @media (max-width: 768px) {
   .nav-links, .nav-cta {
     display: none;
   }
+
+  .site-header nav,
+  .site-header .nav-links {
+    display: contents;
+  }
+
+  .site-header .nav-item:not(.theme-switcher-nav-item) {
+    display: none;
+  }
+
+  .theme-switcher-nav-item {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 74px;
+    transform: translateY(-50%);
+  }
+
   .mobile-toggle {
     display: block;
   }

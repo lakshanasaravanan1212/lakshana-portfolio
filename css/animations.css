@@ -43,7 +43,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #e889a9;
+  color: var(--pink);
   font-size: 16px;
   line-height: 1;
   opacity: 0;
@@ -51,10 +51,10 @@
   will-change: transform, opacity;
 }
 
-.cursor-heart:nth-child(2) { color: #d97798; }
-.cursor-heart:nth-child(3) { color: #f0a6bc; }
-.cursor-heart:nth-child(4) { color: #df86a5; }
-.cursor-heart:nth-child(5) { color: #c96e91; }
+.cursor-heart:nth-child(2) { color: var(--pink-deep); }
+.cursor-heart:nth-child(3) { color: var(--pink-soft); }
+.cursor-heart:nth-child(4) { color: var(--brown-light); }
+.cursor-heart:nth-child(5) { color: var(--brown); }
 
 .cursor-heart.is-active {
   animation: cursorHeartFloat 650ms ease-out forwards;

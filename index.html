@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Lakshana S — UI/UX Designer Portfolio</title>
 <meta name="description" content="Lakshana S is a UI/UX design student and freelance designer experienced in Figma, user research, wireframes, prototypes, responsive interfaces, and visual design.">
+<script>
+  try {
+    const savedTheme = localStorage.getItem('lakshana-portfolio-theme');
+    document.documentElement.dataset.theme = ['blush', 'midnight', 'sage', 'ocean'].includes(savedTheme) ? savedTheme : 'blush';
+  } catch {
+    document.documentElement.dataset.theme = 'blush';
+  }
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
@@ -29,6 +37,50 @@
 
     <nav aria-label="Primary Navigation">
       <ul class="nav-links">
+        <li class="nav-item theme-switcher-nav-item">
+          <div class="theme-switcher" id="theme-switcher">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Choose portfolio theme"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="theme-menu"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3a9 9 0 1 0 0 18h1.2a2.1 2.1 0 0 0 1.4-3.7 1.7 1.7 0 0 1 1.1-3h1.1A4.2 4.2 0 0 0 21 10.1C21 6.2 17 3 12 3Z"/>
+                <circle cx="7.5" cy="11" r="1"/>
+                <circle cx="10" cy="7.5" r="1"/>
+                <circle cx="15" cy="8" r="1"/>
+              </svg>
+              <span>Theme</span>
+            </button>
+            <div class="theme-menu" id="theme-menu" role="group" aria-label="Choose a color theme" hidden>
+              <p class="theme-menu-title">Choose your palette</p>
+              <button class="theme-option" type="button" data-theme-value="blush" aria-pressed="true">
+                <span class="theme-preview theme-preview--blush" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="theme-option-name">Blush Scrapbook</span>
+                <svg class="theme-option-check" viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg>
+              </button>
+              <button class="theme-option" type="button" data-theme-value="midnight" aria-pressed="false">
+                <span class="theme-preview theme-preview--midnight" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="theme-option-name">Midnight Elegance</span>
+                <svg class="theme-option-check" viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg>
+              </button>
+              <button class="theme-option" type="button" data-theme-value="sage" aria-pressed="false">
+                <span class="theme-preview theme-preview--sage" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="theme-option-name">Sage Garden</span>
+                <svg class="theme-option-check" viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg>
+              </button>
+              <button class="theme-option" type="button" data-theme-value="ocean" aria-pressed="false">
+                <span class="theme-preview theme-preview--ocean" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="theme-option-name">Ocean Breeze</span>
+                <svg class="theme-option-check" viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg>
+              </button>
+            </div>
+          </div>
+        </li>
         <li class="nav-item"><a href="#about">About</a></li>
         <li class="nav-item"><a href="#resume">Resume</a></li>
         <li class="nav-item"><a href="#projects">Projects</a></li>
@@ -891,6 +943,7 @@
      INTERACTIVITY & ANIMATIONS SCRIPT
      ========================================================================== -->
 <script src="js/cursor-heart-trail.js"></script>
+<script src="js/theme-switcher.js"></script>
 <script type="module" src="js/main.js"></script>
 
 </body>

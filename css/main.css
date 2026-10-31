@@ -24,6 +24,220 @@
   --shadow-md: 0 10px 28px rgba(80, 30, 20, 0.14);
   --shadow-lg: 0 20px 45px rgba(80, 30, 20, 0.22);
   --shadow-phone: 0 18px 40px rgba(70, 25, 15, 0.28);
+  --header-bg: rgba(240, 242, 233, 0.92);
+  --header-scrolled-bg: rgba(240, 242, 233, 0.97);
+  --header-border: rgba(228, 139, 176, 0.22);
+  --drawer-bg: rgba(240, 242, 233, 0.98);
+  --texture-brown: rgba(123, 58, 26, 0.035);
+  --texture-accent: rgba(228, 139, 176, 0.04);
+  --washi-bg: rgba(242, 214, 224, 0.75);
+  --washi-border: rgba(123, 58, 26, 0.2);
+  --modal-backdrop: rgba(40, 20, 15, 0.75);
+  --modal-border: rgba(228, 139, 176, 0.4);
+  --contact-border: rgba(123, 58, 26, 0.16);
+  --highlight-yellow: #F7E68A;
+  --highlight-pink: #F6C1D6;
+  --highlight-sage: #D3E2D1;
+  --portrait-backdrop: linear-gradient(135deg, #FAF4EF 0%, #EBD5DF 100%);
+  --ncc-photo-backdrop: #e8eadc;
+  --pizza-crust: #b76e38;
+  --pizza-cheese: #f2c86c;
+  --pizza-topping: #a94737;
+  --pizza-herb: #657747;
+  --phone-preview-filter: none;
+  --palette-preview-1: #F0F2E9;
+  --palette-preview-2: #F2D6E0;
+  --palette-preview-3: #E48BB0;
+  --hero-shadow: rgba(123, 58, 26, 0.08);
+  --hero-glow: rgba(228, 139, 176, 0.2);
+  --hero-hover-glow: rgba(228, 139, 176, 0.45);
+  --tool-border: #000000;
+  --doodle-shadow: rgba(80, 30, 20, 0.16);
+  --timeline-halo: rgba(228, 139, 176, 0.2);
+  --scroll-track: rgba(123, 58, 26, 0.08);
+  --contrast-text: #56240E;
+  --tooltip-bg: #3A2A26;
+  --tooltip-text: #F0F2E9;
+}
+
+html[data-theme="midnight"] {
+  color-scheme: dark;
+  --cream: #17151C;
+  --cream-card: #211D27;
+  --blush: #2A2230;
+  --blush-light: #352A3A;
+  --blush-dark: #49364E;
+  --brown: #F3E9E7;
+  --brown-dark: #FCF4F1;
+  --brown-light: #C6A7D3;
+  --pink: #E887AB;
+  --pink-soft: #C7A9D8;
+  --pink-deep: #C3A4DC;
+  --ink: #F3E9E7;
+  --muted: #C8BAC8;
+  --muted-light: #A99AAA;
+  --chip: #75435F;
+  --chipt: #FFF4F8;
+  --white: #25202B;
+  --border-line: rgba(217, 168, 205, 0.2);
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.32);
+  --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.4);
+  --shadow-phone: 0 18px 40px rgba(0, 0, 0, 0.45);
+  --header-bg: rgba(23, 21, 28, 0.94);
+  --header-scrolled-bg: rgba(23, 21, 28, 0.98);
+  --header-border: rgba(232, 135, 171, 0.22);
+  --drawer-bg: rgba(23, 21, 28, 0.98);
+  --texture-brown: rgba(243, 233, 231, 0.025);
+  --texture-accent: rgba(195, 164, 220, 0.035);
+  --washi-bg: rgba(199, 169, 216, 0.22);
+  --washi-border: rgba(243, 233, 231, 0.2);
+  --modal-backdrop: rgba(5, 4, 8, 0.82);
+  --modal-border: rgba(232, 135, 171, 0.32);
+  --contact-border: rgba(243, 233, 231, 0.18);
+  --highlight-yellow: #66583F;
+  --highlight-pink: #68435A;
+  --highlight-sage: #354B42;
+  --portrait-backdrop: linear-gradient(135deg, #332A38 0%, #49364E 100%);
+  --ncc-photo-backdrop: #332F38;
+  --pizza-crust: #A66D55;
+  --pizza-cheese: #D5B879;
+  --pizza-topping: #A45462;
+  --pizza-herb: #A7B28B;
+  --phone-preview-filter: invert(0.88) hue-rotate(180deg) saturate(0.82);
+  --palette-preview-1: #17151C;
+  --palette-preview-2: #75435F;
+  --palette-preview-3: #C3A4DC;
+  --hero-shadow: rgba(232, 135, 171, 0.08);
+  --hero-glow: rgba(195, 164, 220, 0.18);
+  --hero-hover-glow: rgba(195, 164, 220, 0.38);
+  --tool-border: #0B0910;
+  --doodle-shadow: rgba(0, 0, 0, 0.36);
+  --timeline-halo: rgba(232, 135, 171, 0.22);
+  --scroll-track: rgba(243, 233, 231, 0.08);
+  --contrast-text: #17151C;
+  --tooltip-bg: #F3E9E7;
+  --tooltip-text: #211D27;
+}
+
+html[data-theme="sage"] {
+  color-scheme: light;
+  --cream: #F5F2E8;
+  --cream-card: #FAFAF3;
+  --blush: #E4EBDD;
+  --blush-light: #EFF3E9;
+  --blush-dark: #D1DDC7;
+  --brown: #3E4A36;
+  --brown-dark: #2E382A;
+  --brown-light: #65754E;
+  --pink: #91A889;
+  --pink-soft: #CDD9BF;
+  --pink-deep: #71835E;
+  --ink: #343A30;
+  --muted: #727C69;
+  --muted-light: #A5AE9A;
+  --chip: #536B47;
+  --chipt: #F3F4E8;
+  --white: #FEFDF8;
+  --border-line: rgba(62, 74, 54, 0.16);
+  --shadow-sm: 0 4px 14px rgba(55, 66, 47, 0.08);
+  --shadow-md: 0 10px 28px rgba(55, 66, 47, 0.14);
+  --shadow-lg: 0 20px 45px rgba(55, 66, 47, 0.2);
+  --shadow-phone: 0 18px 40px rgba(55, 66, 47, 0.24);
+  --header-bg: rgba(245, 242, 232, 0.94);
+  --header-scrolled-bg: rgba(245, 242, 232, 0.98);
+  --header-border: rgba(113, 131, 94, 0.22);
+  --drawer-bg: rgba(245, 242, 232, 0.98);
+  --texture-brown: rgba(62, 74, 54, 0.035);
+  --texture-accent: rgba(113, 131, 94, 0.035);
+  --washi-bg: rgba(209, 221, 199, 0.72);
+  --washi-border: rgba(62, 74, 54, 0.2);
+  --modal-backdrop: rgba(29, 37, 27, 0.72);
+  --modal-border: rgba(113, 131, 94, 0.35);
+  --contact-border: rgba(62, 74, 54, 0.18);
+  --highlight-yellow: #E6DEAA;
+  --highlight-pink: #D5E1C9;
+  --highlight-sage: #D3E2D1;
+  --portrait-backdrop: linear-gradient(135deg, #F5F2E8 0%, #E4EBDD 100%);
+  --ncc-photo-backdrop: #E8EBDD;
+  --pizza-crust: #A9794F;
+  --pizza-cheese: #E2C77E;
+  --pizza-topping: #A94E43;
+  --pizza-herb: #657747;
+  --phone-preview-filter: saturate(0.78) sepia(0.12) hue-rotate(12deg);
+  --palette-preview-1: #F5F2E8;
+  --palette-preview-2: #E4EBDD;
+  --palette-preview-3: #71835E;
+  --hero-shadow: rgba(62, 74, 54, 0.08);
+  --hero-glow: rgba(145, 168, 137, 0.2);
+  --hero-hover-glow: rgba(145, 168, 137, 0.38);
+  --tool-border: #2E382A;
+  --doodle-shadow: rgba(55, 66, 47, 0.16);
+  --timeline-halo: rgba(113, 131, 94, 0.2);
+  --scroll-track: rgba(62, 74, 54, 0.08);
+  --contrast-text: #2E382A;
+  --tooltip-bg: #343A30;
+  --tooltip-text: #F5F2E8;
+}
+
+html[data-theme="ocean"] {
+  color-scheme: light;
+  --cream: #EEF6FA;
+  --cream-card: #FBFDFF;
+  --blush: #DDECF4;
+  --blush-light: #EDF5FB;
+  --blush-dark: #CBDDE9;
+  --brown: #193B55;
+  --brown-dark: #102C41;
+  --brown-light: #416480;
+  --pink: #7EB7D1;
+  --pink-soft: #D0C6E9;
+  --pink-deep: #9181BC;
+  --ink: #243744;
+  --muted: #667E8D;
+  --muted-light: #A4B5BF;
+  --chip: #355D7B;
+  --chipt: #F4F9FC;
+  --white: #FFFFFF;
+  --border-line: rgba(25, 59, 85, 0.16);
+  --shadow-sm: 0 4px 14px rgba(26, 64, 91, 0.08);
+  --shadow-md: 0 10px 28px rgba(26, 64, 91, 0.14);
+  --shadow-lg: 0 20px 45px rgba(26, 64, 91, 0.2);
+  --shadow-phone: 0 18px 40px rgba(26, 64, 91, 0.24);
+  --header-bg: rgba(238, 246, 250, 0.94);
+  --header-scrolled-bg: rgba(238, 246, 250, 0.98);
+  --header-border: rgba(126, 183, 209, 0.28);
+  --drawer-bg: rgba(238, 246, 250, 0.98);
+  --texture-brown: rgba(25, 59, 85, 0.03);
+  --texture-accent: rgba(145, 129, 188, 0.04);
+  --washi-bg: rgba(208, 198, 233, 0.62);
+  --washi-border: rgba(25, 59, 85, 0.18);
+  --modal-backdrop: rgba(12, 35, 51, 0.72);
+  --modal-border: rgba(126, 183, 209, 0.4);
+  --contact-border: rgba(25, 59, 85, 0.18);
+  --highlight-yellow: #E9E1B7;
+  --highlight-pink: #D0C6E9;
+  --highlight-sage: #D3E2D1;
+  --portrait-backdrop: linear-gradient(135deg, #EEF6FA 0%, #DDECF4 100%);
+  --ncc-photo-backdrop: #DFEAF0;
+  --pizza-crust: #A97958;
+  --pizza-cheese: #E2C77E;
+  --pizza-topping: #A94E43;
+  --pizza-herb: #657747;
+  --phone-preview-filter: saturate(0.82) hue-rotate(175deg);
+  --palette-preview-1: #EEF6FA;
+  --palette-preview-2: #DDECF4;
+  --palette-preview-3: #9181BC;
+  --hero-shadow: rgba(25, 59, 85, 0.08);
+  --hero-glow: rgba(126, 183, 209, 0.22);
+  --hero-hover-glow: rgba(145, 129, 188, 0.36);
+  --tool-border: #102C41;
+  --doodle-shadow: rgba(26, 64, 91, 0.16);
+  --timeline-halo: rgba(126, 183, 209, 0.22);
+  --scroll-track: rgba(25, 59, 85, 0.08);
+  --contrast-text: #102C41;
+  --tooltip-bg: #243744;
+  --tooltip-text: #EEF6FA;
 }
 
 *, *::before, *::after {
@@ -48,10 +262,55 @@ body {
   overflow-x: hidden;
   position: relative;
   background-image: 
-    radial-gradient(rgba(123, 58, 26, 0.035) 1px, transparent 1px),
-    radial-gradient(rgba(228, 139, 176, 0.04) 1px, transparent 1px);
+    radial-gradient(var(--texture-brown) 1px, transparent 1px),
+    radial-gradient(var(--texture-accent) 1px, transparent 1px);
   background-size: 28px 28px;
   background-position: 0 0, 14px 14px;
+}
+
+html.theme-transition-ready body,
+html.theme-transition-ready .site-header,
+html.theme-transition-ready .theme-toggle,
+html.theme-transition-ready .theme-menu,
+html.theme-transition-ready .theme-option,
+html.theme-transition-ready section,
+html.theme-transition-ready .brand-logo,
+html.theme-transition-ready .brand-tag,
+html.theme-transition-ready .nav-item a,
+html.theme-transition-ready .nav-cta,
+html.theme-transition-ready .portrait-frame,
+html.theme-transition-ready .ncc-photo-frame,
+html.theme-transition-ready .resume-divider::after,
+html.theme-transition-ready .contact-panel,
+html.theme-transition-ready .project-card,
+html.theme-transition-ready .modal-content,
+html.theme-transition-ready .timeline-node,
+html.theme-transition-ready .timeline-badge,
+html.theme-transition-ready .skill-chip,
+html.theme-transition-ready .project-tag,
+html.theme-transition-ready .project-btn,
+html.theme-transition-ready .footer-bottom,
+html.theme-transition-ready .footer-socials a,
+html.theme-transition-ready .floating-doodle-layer,
+html.theme-transition-ready .floating-doodle,
+html.theme-transition-ready .cursor-heart,
+html.theme-transition-ready h1,
+html.theme-transition-ready h2,
+html.theme-transition-ready h3,
+html.theme-transition-ready h4,
+html.theme-transition-ready p,
+html.theme-transition-ready em,
+html.theme-transition-ready strong,
+html.theme-transition-ready .about-text,
+html.theme-transition-ready .timeline-company,
+html.theme-transition-ready .timeline-description,
+html.theme-transition-ready .edu-date,
+html.theme-transition-ready .edu-grade,
+html.theme-transition-ready .skills-category-title,
+html.theme-transition-ready .contact-link-card,
+html.theme-transition-ready .contact-email,
+html.theme-transition-ready .footer-note {
+  transition: background-color 320ms ease, color 320ms ease, border-color 320ms ease, box-shadow 320ms ease, fill 320ms ease, stroke 320ms ease, transform 320ms ease, opacity 320ms ease, height 320ms ease;
 }
 
 /* Scroll progress bar */
@@ -119,9 +378,9 @@ mark {
   border-radius: 2px;
   color: inherit;
 }
-mark.hl-yellow { background-color: #F7E68A; }
-mark.hl-pink { background-color: #F6C1D6; }
-mark.hl-sage { background-color: #D3E2D1; }
+mark.hl-yellow { background-color: var(--highlight-yellow); }
+mark.hl-pink { background-color: var(--highlight-pink); }
+mark.hl-sage { background-color: var(--highlight-sage); }
 
 /* SVG doodles & decorations */
 svg.d {
@@ -158,10 +417,10 @@ svg.d.pink {
 .washi-tape {
   position: absolute;
   height: 24px;
-  background: rgba(242, 214, 224, 0.75);
+  background: var(--washi-bg);
   backdrop-filter: blur(2px);
-  border-left: 2px dashed rgba(123, 58, 26, 0.2);
-  border-right: 2px dashed rgba(123, 58, 26, 0.2);
+  border-left: 2px dashed var(--washi-border);
+  border-right: 2px dashed var(--washi-border);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   z-index: 5;
   pointer-events: none;

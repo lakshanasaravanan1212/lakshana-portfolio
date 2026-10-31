@@ -249,6 +249,7 @@ section {
   max-width: 1220px;
   margin: 0 auto;
   position: relative;
+  z-index: 1;
 }
 
 /* Scroll reveal helper classes */
@@ -271,6 +272,7 @@ section {
 
 .hero-wrap {
   position: relative;
+  z-index: 1;
   display: inline-block;
   padding: 30px clamp(20px, 4vw, 60px);
   max-width: 1100px;
@@ -1163,6 +1165,8 @@ section {
 }
 
 .projects-title-box {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -1190,6 +1194,8 @@ section {
 
 /* Phone Carousel Container */
 .phones-scroll-wrap {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 1340px;
   margin: 0 auto;
@@ -1325,6 +1331,8 @@ section {
 
 /* Project Overview Detail Cards */
 .project-details-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(20px, 3vw, 36px);
@@ -1517,6 +1525,7 @@ section {
   margin: 0 auto 36px;
   padding: 0;
   position: relative;
+  z-index: 1;
   color: var(--ink);
 }
 

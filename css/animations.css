@@ -82,3 +82,226 @@
     transform: translate(calc(-50% + var(--heart-drift)), calc(-50% - 19px)) scale(0.8);
   }
 }
+
+.floating-doodle-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-doodle {
+  --doodle-x: 0px;
+  --doodle-y: 0px;
+  --float-distance: 9px;
+  position: absolute;
+  display: block;
+  width: var(--doodle-size, 30px);
+  color: var(--brown);
+  opacity: var(--doodle-opacity, 0.5);
+  animation: doodleFloat var(--doodle-duration, 10s) ease-in-out var(--doodle-delay, 0s) infinite;
+  will-change: transform, opacity;
+}
+
+.floating-doodle svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.floating-doodle--motion-1 {
+  --float-distance: 6px;
+  animation-name: doodleSway;
+  animation-duration: 12s;
+}
+
+.floating-doodle--motion-2 {
+  --float-distance: 11px;
+  animation-name: doodleTwinkle;
+  animation-duration: 8s;
+}
+
+.floating-doodle--hero-sparkle,
+.floating-doodle--projects-sparkle {
+  --doodle-size: 30px;
+  --doodle-opacity: 0.48;
+  color: var(--pink-deep);
+}
+
+.floating-doodle--hero-sparkle {
+  top: 19%;
+  left: 12%;
+}
+
+.floating-doodle--hero-heart {
+  --doodle-size: 24px;
+  --doodle-opacity: 0.42;
+  top: 54%;
+  right: 12%;
+  color: var(--brown-light);
+}
+
+.floating-doodle--hero-flower {
+  --doodle-size: 34px;
+  --doodle-opacity: 0.38;
+  bottom: 8%;
+  left: 20%;
+  color: var(--pink-deep);
+}
+
+.floating-doodle--about-heart {
+  --doodle-size: 24px;
+  --doodle-opacity: 0.38;
+  top: 14%;
+  left: 4%;
+  color: var(--brown);
+}
+
+.floating-doodle--about-butterfly {
+  --doodle-size: 30px;
+  --doodle-opacity: 0.4;
+  top: 12%;
+  right: 5%;
+  color: var(--pink-deep);
+}
+
+.floating-doodle--about-sparkle {
+  --doodle-size: 24px;
+  --doodle-opacity: 0.45;
+  right: 4%;
+  bottom: 12%;
+  color: var(--brown-light);
+}
+
+.floating-doodle--resume-dots {
+  --doodle-size: 42px;
+  --doodle-opacity: 0.3;
+  top: 36%;
+  left: 3%;
+  color: var(--pink-deep);
+}
+
+.floating-doodle--resume-dots svg {
+  stroke-dasharray: 1 5;
+  stroke-width: 3;
+}
+
+.floating-doodle--resume-strokes {
+  --doodle-size: 42px;
+  --doodle-opacity: 0.35;
+  top: 18%;
+  right: 4%;
+  color: var(--brown-light);
+}
+
+.floating-doodle--resume-flower {
+  --doodle-size: 27px;
+  --doodle-opacity: 0.35;
+  right: 5%;
+  bottom: 8%;
+  color: var(--pink-deep);
+}
+
+.floating-doodle--projects-sparkle {
+  top: 14%;
+  right: 8%;
+}
+
+.floating-doodle--projects-butterfly {
+  --doodle-size: 28px;
+  --doodle-opacity: 0.4;
+  top: 47%;
+  left: 2%;
+  color: var(--brown-light);
+}
+
+.floating-doodle--projects-arrow {
+  --doodle-size: 42px;
+  --doodle-opacity: 0.4;
+  right: 4%;
+  bottom: 12%;
+  color: var(--brown);
+}
+
+.floating-doodle--projects-heart {
+  --doodle-size: 22px;
+  --doodle-opacity: 0.4;
+  bottom: 8%;
+  left: 10%;
+  color: var(--pink-deep);
+}
+
+.floating-doodle--contact-flower {
+  --doodle-size: 34px;
+  --doodle-opacity: 0.4;
+  top: 20%;
+  right: 5%;
+  color: var(--pink-deep);
+}
+
+.floating-doodle--contact-dots {
+  --doodle-size: 38px;
+  --doodle-opacity: 0.28;
+  bottom: 18%;
+  left: 4%;
+  color: var(--brown-light);
+}
+
+.floating-doodle--contact-dots svg {
+  stroke-dasharray: 1 5;
+  stroke-width: 3;
+}
+
+.floating-doodle--contact-heart {
+  --doodle-size: 21px;
+  --doodle-opacity: 0.4;
+  right: 20%;
+  bottom: 12%;
+  color: var(--pink-deep);
+}
+
+@keyframes doodleFloat {
+  0%, 100% {
+    transform: translate3d(var(--doodle-x), var(--doodle-y), 0) rotate(-7deg) scale(0.96);
+    opacity: var(--doodle-opacity);
+  }
+  50% {
+    transform: translate3d(var(--doodle-x), calc(var(--doodle-y) - var(--float-distance)), 0) rotate(7deg) scale(1.04);
+    opacity: calc(var(--doodle-opacity) + 0.15);
+  }
+}
+
+@keyframes doodleSway {
+  0%, 100% {
+    transform: translate3d(var(--doodle-x), var(--doodle-y), 0) rotate(7deg);
+  }
+  50% {
+    transform: translate3d(var(--doodle-x), calc(var(--doodle-y) - var(--float-distance)), 0) rotate(-8deg);
+  }
+}
+
+@keyframes doodleTwinkle {
+  0%, 100% {
+    transform: translate3d(var(--doodle-x), var(--doodle-y), 0) scale(0.9) rotate(-8deg);
+    opacity: calc(var(--doodle-opacity) * 0.75);
+  }
+  50% {
+    transform: translate3d(var(--doodle-x), calc(var(--doodle-y) - var(--float-distance)), 0) scale(1.12) rotate(8deg);
+    opacity: calc(var(--doodle-opacity) + 0.3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-doodle {
+    animation: none;
+    opacity: var(--doodle-opacity, 0.5);
+    transform: none;
+  }
+}

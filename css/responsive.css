@@ -74,6 +74,16 @@
     min-height: 80vh;
     padding-top: 80px;
   }
+  .floating-doodle--hero-flower,
+  .floating-doodle--about-butterfly,
+  .floating-doodle--resume-strokes,
+  .floating-doodle--projects-butterfly,
+  .floating-doodle--contact-dots {
+    display: none;
+  }
+  .floating-doodle {
+    --doodle-size: 22px;
+  }
   .hero-wrap {
     padding: 20px 8px;
   }
@@ -195,6 +205,15 @@
   .contact-link-card {
     min-height: 46px;
     padding: 9px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-doodle--hero-sparkle,
+  .floating-doodle--resume-dots,
+  .floating-doodle--projects-heart,
+  .floating-doodle--contact-heart {
+    display: none;
   }
 }
 

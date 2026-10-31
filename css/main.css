@@ -1,0 +1,168 @@
+/* ==========================================================================
+   DESIGN TOKENS & RESET
+   ========================================================================== */
+:root {
+  --cream: #F0F2E9;
+  --cream-card: #FAFBF7;
+  --blush: #F2D6E0;
+  --blush-light: #FBF0F4;
+  --blush-dark: #E5BED0;
+  --brown: #7B3A1A;
+  --brown-dark: #56240E;
+  --brown-light: #9B502C;
+  --pink: #E48BB0;
+  --pink-soft: #F4C4D7;
+  --pink-deep: #D46A95;
+  --ink: #3A2A26;
+  --muted: #8A7A74;
+  --muted-light: #B8ABA5;
+  --chip: #7B3A1A;
+  --chipt: #F4DFE6;
+  --white: #FFFFFF;
+  --border-line: rgba(123, 58, 26, 0.15);
+  --shadow-sm: 0 4px 14px rgba(80, 30, 20, 0.08);
+  --shadow-md: 0 10px 28px rgba(80, 30, 20, 0.14);
+  --shadow-lg: 0 20px 45px rgba(80, 30, 20, 0.22);
+  --shadow-phone: 0 18px 40px rgba(70, 25, 15, 0.28);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  background-image: 
+    radial-gradient(rgba(123, 58, 26, 0.035) 1px, transparent 1px),
+    radial-gradient(rgba(228, 139, 176, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--pink), var(--brown), var(--pink));
+  z-index: 1000;
+  transition: width 0.1s ease-out;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY UTILITIES
+   ========================================================================== */
+.font-anton {
+  font-family: 'Anton', Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.font-hand {
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+}
+
+.font-script {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Anton', Impact, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--brown);
+  line-height: 1.05;
+}
+
+/* Outlined uppercase heading style from reference */
+.out {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--pink);
+  text-stroke: 1.5px var(--pink);
+  font-size: clamp(28px, 3.8vw, 42px);
+  letter-spacing: 0.03em;
+  display: inline-block;
+  transition: transform 0.3s ease, -webkit-text-stroke-color 0.3s ease;
+}
+
+.out:hover {
+  -webkit-text-stroke-color: var(--brown);
+  transform: translateX(4px);
+}
+
+/* Highlighting effects */
+mark {
+  padding: 0 4px;
+  border-radius: 2px;
+  color: inherit;
+}
+mark.hl-yellow { background-color: #F7E68A; }
+mark.hl-pink { background-color: #F6C1D6; }
+mark.hl-sage { background-color: #D3E2D1; }
+
+/* SVG doodles & decorations */
+svg.d {
+  position: absolute;
+  pointer-events: none;
+  fill: none;
+  stroke: var(--brown);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+svg.d.pink {
+  stroke: var(--pink);
+}
+
+.sparkle {
+  position: absolute;
+  pointer-events: none;
+  stroke: var(--pink);
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: sparkleTwinkle 4s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+/* Scrapbook tape accents */
+.washi-tape {
+  position: absolute;
+  height: 24px;
+  background: rgba(242, 214, 224, 0.75);
+  backdrop-filter: blur(2px);
+  border-left: 2px dashed rgba(123, 58, 26, 0.2);
+  border-right: 2px dashed rgba(123, 58, 26, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  z-index: 5;
+  pointer-events: none;
+}

@@ -1,0 +1,208 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .about-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+  }
+  .about-portrait-wrap {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .portrait-frame {
+    width: min(320px, 100%);
+  }
+  .about-sticker-bouquet {
+    top: 1%;
+    right: -4%;
+    width: 96px;
+  }
+  .about-sticker-heart {
+    left: -1%;
+    width: 36px;
+  }
+  .about-sticker-dot {
+    right: 0;
+    width: 25px;
+    height: 25px;
+  }
+  .about-sticker-arrow {
+    right: -2%;
+    width: 70px;
+  }
+  .about-sticker-pizza {
+    left: -2%;
+    width: 52px;
+  }
+  .ncc-collage {
+    grid-column: 1 / -1;
+    min-height: 480px;
+  }
+  .ncc-photo-frame {
+    width: min(270px, 72vw);
+  }
+  .ncc-photo-box {
+    height: 390px;
+  }
+  .resume-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .resume-divider {
+    display: none;
+  }
+  .project-details-grid {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-cta {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+  
+  section {
+    padding: 50px 18px;
+  }
+
+  .hero {
+    min-height: 80vh;
+    padding-top: 80px;
+  }
+  .hero-wrap {
+    padding: 20px 8px;
+  }
+  .hero-name {
+    top: -2%;
+    right: 0;
+    font-size: 32px;
+  }
+  .hero-year {
+    left: 0;
+    bottom: 12%;
+    font-size: 26px;
+  }
+  .hero-edition {
+    right: 0;
+    bottom: 16%;
+    font-size: 24px;
+  }
+
+  .about-collage {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+  .about-portrait-wrap {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .ncc-collage {
+    grid-column: 1;
+    min-height: 450px;
+  }
+  .ncc-photo-frame {
+    width: min(270px, 82vw);
+  }
+  .ncc-photo-box {
+    height: 370px;
+  }
+  .ncc-hand-note {
+    top: 1%;
+    right: 0;
+    font-size: 17px;
+  }
+  .portrait-frame {
+    width: min(320px, 88vw);
+  }
+  .about-sticker-bouquet {
+    top: 2%;
+    right: -3%;
+    width: 82px;
+  }
+  .about-sticker-heart {
+    top: 23%;
+    left: -2%;
+    width: 32px;
+  }
+  .about-sticker-dot {
+    top: 52%;
+    right: -1%;
+    width: 22px;
+    height: 22px;
+  }
+  .about-sticker-arrow {
+    right: -2%;
+    bottom: 3%;
+    width: 62px;
+  }
+  .about-sticker-pizza {
+    bottom: 7%;
+    left: -2%;
+    width: 46px;
+  }
+  .portrait-img-box {
+    height: 320px;
+  }
+
+  .phone-item {
+    flex-basis: 175px;
+    margin-top: 0 !important;
+  }
+  .phone-item:nth-child(even) {
+    margin-top: 20px !important;
+  }
+
+  .contact-panel-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(52px, 15vw, 84px);
+  }
+  .hero-sub {
+    font-size: 18px;
+  }
+  .edu-entry {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .chips-cloud {
+    gap: 6px;
+  }
+  .skill-chip {
+    font-size: 11.5px;
+    padding: 4px 10px;
+  }
+  .contact-email-row {
+    gap: 10px;
+  }
+  .contact-email {
+    font-size: clamp(16px, 5vw, 22px);
+  }
+  .contact-link-card {
+    min-height: 46px;
+    padding: 9px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
